@@ -6,7 +6,6 @@
 package uy.com.butenzar.controller;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import uy.com.butenzar.common.File;
 import uy.com.butenzar.datatype.DataFile;

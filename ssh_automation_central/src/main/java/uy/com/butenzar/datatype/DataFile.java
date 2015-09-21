@@ -36,4 +36,11 @@ public class DataFile {
     public final String getDescription() {
         return description;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+    
+    
 }
