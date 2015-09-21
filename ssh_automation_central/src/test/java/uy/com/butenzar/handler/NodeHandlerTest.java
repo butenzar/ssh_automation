@@ -21,7 +21,7 @@ public class NodeHandlerTest {
     /**
      * Handler de Nodos.
      */
-    private static final NodeHandler NODEHANDLER = NodeHandler.getInstance();
+    private static final CollectionNode NODEHANDLER = CollectionNode.getInstance();
     /**
      * Identificador del nodo 99.
      */
@@ -58,14 +58,14 @@ public class NodeHandlerTest {
     }
 
     /**
-     * Test of addNode method, of class NodeHandler.
+     * Test of addNode method, of class CollectionNode.
      */
     @Test
     public void testAddNode() {
     }
 
     /**
-     * Test of getNode method, of class NodeHandler.
+     * Test of getNode method, of class CollectionNode.
      */
     @Test
     public final void testGetNode() {
@@ -76,7 +76,7 @@ public class NodeHandlerTest {
     }
 
     /**
-     * Test of getNodeList method, of class NodeHandler.
+     * Test of getNodeList method, of class CollectionNode.
      */
     @Test
     public final void testGetNodeList() {
@@ -84,12 +84,12 @@ public class NodeHandlerTest {
     }
 
     /**
-     * Test of getInstance method, of class NodeHandler.
+     * Test of getInstance method, of class CollectionNode.
      */
     @Test
     public final void testGetInstance() {
-       Assert.assertEquals(NodeHandler.getInstance(),
-               NodeHandler.getInstance());
+       Assert.assertEquals(CollectionNode.getInstance(),
+               CollectionNode.getInstance());
     }
 
 }

@@ -14,15 +14,15 @@ import uy.com.butenzar.common.Node;
  *
  * @author Bruno Szilagyi
  */
-public class NodeHandler {
+public class CollectionNode {
 
-    private static NodeHandler instance = null;
+    private static CollectionNode instance = null;
     private final Map<String,Node> nodesMap;
 
     /**
      * Constructor.
      */
-    private NodeHandler(){
+    private CollectionNode(){
         nodesMap = new HashMap<>();
     }
 
@@ -58,13 +58,13 @@ public class NodeHandler {
 
     /**
      *
-     * @return la instancia única de NodeHandler
+     * @return la instancia única de CollectionNode
      */
-    public static NodeHandler getInstance() {
+    public static CollectionNode getInstance() {
 
         // Lazy initialization - Singleton
         if(instance == null){
-            instance = new NodeHandler();
+            instance = new CollectionNode();
         }
 
         return instance;

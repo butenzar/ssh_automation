@@ -2,6 +2,7 @@ package uy.com.butenzar.common;
 
 import java.util.ArrayList;
 import java.util.List;
+import uy.com.butenzar.datatype.DataFile;
 
 /**
  *
@@ -28,6 +29,14 @@ public class File {
         nodeAssociationList = new ArrayList<>();
     }
 
+    /**
+     * Crea y retorna un DataFile a partir de los datos del Objecto.
+     * @return
+     */
+    public DataFile toData(){
+        return new DataFile(this.name, this.description);
+    }
+    
     public void addNodeAsociation(FileNode nodeToAsociate){
         nodeAssociationList.add(nodeToAsociate);
     }
